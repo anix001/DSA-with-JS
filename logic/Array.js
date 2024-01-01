@@ -68,4 +68,29 @@ console.log( isArrEqual([1,2,3], [1,2,3]));
 //flat method = to make nested array to flat array
 
 const arr = [1, 2,[3,4,[5,6,[7,8]]]];
-console.log(arr.flat(3)); //3 => indicates the depth 
+// console.log(arr.flat(3)); //3 => indicates the depth 
+
+//reverse an array
+const reverseArray = (arr)=>{
+    let reverseArr = [];
+
+    for(let i = arr.length -1 ; i >=0 ; i--){
+        reverseArr.push(arr[i]);
+    }
+    return reverseArr;  
+}
+
+// console.log(reverseArray([1,2,3]));
+
+// find unique element from an array 
+
+const findUniqueElement =(arr)=>{
+    const uniqueElemArr = [];
+
+    for(let i=0; i< arr.length ; i++){
+        if(!uniqueElemArr.includes(arr[i])) uniqueElemArr.push(arr[i]);
+    }
+    return uniqueElemArr;
+}
+
+console.log(findUniqueElement([1,2,3,1,8,9,9,8,45,4,3]));
