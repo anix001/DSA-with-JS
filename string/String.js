@@ -49,4 +49,19 @@ function findLongestCommonprefix(arr){
    return result;
 }
 
-console.log(findLongestCommonprefix(["anish", "anllljdd","ani"]));
+// console.log(findLongestCommonprefix(["anish", "anllljdd","ani"]));
+
+// Qno 4 merge string alternatively 
+
+const mergeStringAlternatively = (str1, str2) =>{
+    const l = Math.max(str1.length , str2.length );
+    const arr = [];
+    for(let i = 0; i<l; i++){
+       if(str1[i] !== undefined) arr.push(str1[i]);
+       if(str2[i] !== undefined) arr.push(str2[i])
+    }
+    return arr.join('');
+}
+
+
+console.log(mergeStringAlternatively("hjj","jkjk"))
