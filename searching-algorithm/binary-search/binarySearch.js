@@ -11,6 +11,8 @@ function binarySearch(arr, target){
             lastIndex = mid -1;
         }
     }
+
+    return -1;
 }
 
 console.log(binarySearch([1,9,5,8,7,2,5,6,22],22));
