@@ -1,0 +1,2 @@
+ Binary search works in a divide and conquers way. 
+ It divides the array into two halves and performs the searching of the required target value on those halves.
