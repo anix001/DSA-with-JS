@@ -1,0 +1,7 @@
+Bubble sort is a sorting algorithm that starts from the first element of an array and compares it with the second element. 
+If the first element is greater than the second, we swap them.
+It continues this process until the end of the array, with the largest elements “bubbling” to the top.
+
+Worst-Case Time Complexity: O(n²)
+Average Time Complexity: O(n²)
+Best-Case Time Complexity: O(n). The array is already sorted.
