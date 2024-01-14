@@ -1,0 +1,9 @@
+Insertion sort works similar to the sorting of playing cards in hands. 
+It is assumed that the first card is already sorted in the card game, and then we select an unsorted card. 
+If the selected unsorted card is greater than the first card, it will be placed at the right side; otherwise,
+it will be placed at the left side.
+Similarly, all unsorted cards are taken and put in their exact place.
+
+
+avg and worst timeComplexity  = O(n^2)
+
