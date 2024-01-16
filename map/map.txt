@@ -1,0 +1,2 @@
+A Map is an unordered list of key-value pairs where the key and the value can be of any type like string, boolean, number, etc.
+ In a Weak Map, every key can only be an object and function. It used to store weak object references. Maps are iterable.
