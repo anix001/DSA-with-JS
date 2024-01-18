@@ -1,0 +1,6 @@
+A linked list is a data structure composed of nodes. 
+Each node has at least 2 components, the data that it holds and a reference to the next node in the list (called a pointer).
+The first node in a linked list is called the head, the last node in a linked list is called the tail.
+There are several kinds of linked lists. Singly linked lists only contain a pointer to the node after them, 
+doubly linked lists contain a pointer to the node before and after them, and in circular linked lists the tail 
+points to a node earlier in the list (generally the head) as the following node, which creates a loop, or circle.
