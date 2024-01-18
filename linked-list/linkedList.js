@@ -132,6 +132,20 @@ class LinkedList {
       this.head = null;
       this.size = 0;
     }
+
+    //middle of linked list 
+    // if size is odd return mid , if there are two mid return the second one
+    midElement(){
+      if(this.isEmpty()) return "List is empty";
+      const mid = Math.floor(this.size /2);
+      let temp = this.head;
+
+      for(let i =0; i< mid ; i++){
+        temp = temp.next;
+      }
+
+      return temp.data;
+    }
 }
 
 
@@ -139,16 +153,21 @@ const list = new LinkedList();
 list.insertAtHead(40);
 list.insertAtHead(50);
 list.insertAtHead(30);
+list.insertAtHead(20);
+list.insertAtHead(10);
+
 
 list.insertAtIndex(1,35);
 // list.removeAtHead();
 // list.removeElement(2);
 // list.removeElement(2);
 
-console.log(list.search(35))
-console.log(list.search(55))
-
-
+// console.log(list.search(35))
+// console.log(list.search(55))
 console.log("Linkedlist items", list.print());
+
+console.log(list.midElement());
+
+
 console.log("🚀 ~ list:", list);
 
