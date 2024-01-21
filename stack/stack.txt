@@ -1,0 +1,10 @@
+The stack is a linear data structure that is used to store the collection of objects. 
+It is based on Last-In-First-Out (LIFO).
+
+Operations:
+1> push(): add item at the end
+2> pop(): remove item from the top
+3> top(): return top of the stack
+
+
+
