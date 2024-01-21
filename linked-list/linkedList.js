@@ -146,6 +146,22 @@ class LinkedList {
 
       return temp.data;
     }
+
+    //reverse linked list
+    reverseLinkedlist(){
+      let prev = null;
+      let curr = this.head;
+      let next;
+
+      while(curr){
+        next = curr.next
+        curr.next = prev;
+        prev= curr;
+        curr = next;
+      }
+
+      return prev;
+    }
 }
 
 
@@ -168,6 +184,7 @@ console.log("Linkedlist items", list.print());
 
 console.log(list.midElement());
 
+console.log(list.reverseLinkedlist());
 
 console.log("🚀 ~ list:", list);
 
